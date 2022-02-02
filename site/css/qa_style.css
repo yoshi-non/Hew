@@ -1,0 +1,183 @@
+.qa__title__box{
+  position: relative;
+}
+
+.title__qa{
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #0068b7;
+  margin: 80px 0 40px 0;
+  position: relative;
+}
+.title__qa:before{
+  content: "QUESTION&ANSWER";
+  font-size: 0.55em;
+  color: #999;
+  position: absolute;
+  top: -34px;
+}
+.title__qa span{
+  border-bottom: solid 3px #0068b7;
+}
+
+.qa__nav{
+  width: 100%;
+}
+
+.qa__nav ul li{
+  display: inline-block;
+}
+
+.qa__nav ul li a{
+  display: block;
+  width: 330px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #ccc;
+  padding: 20px 60px;
+}
+
+.q__link{
+  position: absolute;
+  right: 2px;
+  bottom: 18px;
+}
+
+.q__link a{
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: 20px 30px;
+  background-color: #0068b7;
+}
+
+.q__link svg{
+  margin-top: -2px;
+}
+
+.qa__open a{
+  position: relative;
+  color: black;
+  border-bottom: solid 4px red;
+}
+
+.qa__close a{
+  color: #777;
+  border-bottom: solid 4px #777;
+}
+
+
+.qa__text__box{
+  position: relative;
+  width: 997px;
+  background-color: white;
+  border: solid 3px #777;
+  margin-bottom: 10px;
+}
+
+.qa__text{
+  padding: 10px 10px 0 10px;
+  color: #0064c8;
+  text-decoration: none;
+}
+
+.qa__text__a{
+  padding-bottom: 20px;
+}
+
+.qa__img{
+  padding: 10px;
+  width: 4%;
+}
+
+.qa__img img{
+  border-radius: 100%;
+}
+
+.qa__text__min{
+  width: 94%;
+  vertical-align: middle;
+  padding: 10px 10px 10px 30px;
+}
+
+.qa__img,.qa__text__min{
+  display: inline-block;
+}
+
+.qa__text__name, .qa__text__date{
+  margin: 0 auto;
+}
+
+.qa__text__main{
+  padding: 10px 20px 0 20px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+.qa__text__date{
+  color: #aaa;
+}
+
+.textarea__box{
+  width: 997px;
+}
+
+.textarea__box textarea{
+  width: 100%;
+  height: 59px;
+  padding: 15px;
+  outline: none;
+  resize: none;
+  font-size: 16px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border-color: #bfbfbf;
+  max-height: 330px;
+}
+textarea :is(:focus, :valid){
+  border-color: #4671EA;
+  border-width: 2px;
+  padding: 14px;
+}
+textarea::-webkit-scrollbar{
+  width: 0px;
+}
+
+/*====質問文 回答文===*/
+
+.qa__box{
+  margin: 50px 0;
+}
+
+.qa__subTitle{
+  padding-bottom: 0.1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #a0c0db;
+  border-left: solid 10px #a0c0db;
+}
+
+.send__btn__box{
+  text-align: right;
+}
+
+.send__btn{
+  font-weight: 300;
+  font-size: 1.2em;
+  color: white;
+  background-color: #0068b7;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-right: 3px;
+  border: 0;
+  border-radius:5px;
+}
+
+.qa__best__box{
+  position: relative;
+  margin-top: -20px;
+  margin-right: 3px;
+  margin-bottom:30px;
+}

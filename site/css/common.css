@@ -1,0 +1,704 @@
+@charset "utf-8";
+
+/*===base===*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*html{scroll-behavior: smooth;}*/
+
+ul{list-style: none;}
+
+a{text-decoration: none;}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #555;
+  border: solid 3px #555;
+}
+
+body{
+  background-image: url(../images/bg__main.gif);
+}
+
+
+/*---------// nav //---------*/
+
+
+.nav{
+  /*position: relative;*/
+  background-color: white;
+  /*background-image: url(../images/bg__main.gif);*/
+  width: 100%;
+  min-width: 1000px;
+  margin: 0 auto;
+  z-index: 100;
+  /*box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.2);*/
+}
+
+.navbar{
+  width: 85%;
+  height: 15%;
+  padding: 20px 0 15px 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 100px;
+  cursor: pointer;
+  padding-top: 3px;
+}
+
+.logo a img{
+  height: 40px;
+}
+
+.nav__main a{
+  cursor: pointer;
+  margin: 0 20px;
+}
+
+
+/*---------// main //---------*/
+
+
+#wrap{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+
+/*---------// explain //---------*/
+
+
+.title__explain{
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #0068b7;
+  margin: 80px 0 40px 0;
+  position: relative;
+}
+.title__explain:before{
+  content: "WHAT'S PYTHON?";
+  font-size: 0.55em;
+  color: #999;
+  position: absolute;
+  top: -34px;
+}
+.title__explain span{
+  border-bottom: solid 3px #0068b7;
+}
+.home_explain p{
+  line-height: 1.7;
+  font-size: 1.3em;
+}
+
+
+/*---------// history //---------*/
+
+
+.title__history{
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #0068b7;
+  margin: 100px 0 50px 0;
+  position: relative;
+}
+.title__history:before{
+  content: "PYTHON'S HISTORY";
+  font-size: 0.55em;
+  color: #999;
+  position: absolute;
+  top: -34px;
+}
+.title__history span{
+  border-bottom: solid 3px #0068b7;
+}
+
+.acd-check{
+    display: none;
+}
+.acd-label{
+    background: #0068b7;
+    height: 70px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.7em;
+    color: #fff;
+    display: block;
+    padding-top: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.acd-label:before {
+  background : #fff;
+  content:"";
+  display: block;
+  height: 100%;
+  left: -100%;
+  opacity: 0.2;
+  position: absolute;
+  transition: .8s;
+  top: 0px;
+  width: 100%;
+}
+.acd-label:hover:before { left:0; }
+.acd-label:hover{
+  color: black;
+  transition: 0.8s;
+}
+.acd-label:after{
+    background: #00479d;
+    box-sizing: border-box;
+    content: '▼';
+    display: block;
+    height: 70px;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    position: absolute;
+    right: 0;
+    top: 0px;
+}
+.acd-content{
+    background-color: white;
+    border: 2px solid #0068b7;
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding: 0 10px;
+    margin-bottom: 5px;
+    transition: .5s;
+    visibility: hidden;
+}
+.acd-check:checked + .acd-label:after{
+    content: '▲';
+}
+.acd-check:checked + .acd-label + .acd-content{
+    height: 100px;
+    opacity: 1;
+    padding: 10px;
+    visibility: visible;
+}
+
+.acd-content p{
+  font-size: 1.3em;
+  line-height: 1.7;
+}
+
+
+/*---------// can do //---------*/
+
+
+.title__can{
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #0068b7;
+  margin: 100px 0 40px 0;
+  position: relative;
+}
+.title__can:before{
+  content: "WHAT PYTHON CAN DO";
+  font-size: 0.55em;
+  color: #999;
+  position: absolute;
+  top: -34px;
+}
+.title__can span{
+  border-bottom: solid 3px #0068b7;
+}
+
+.home_can_in_x:nth-child(1){
+  margin-right: 50px;
+}
+
+.home_can_in_x{
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 470px;
+}
+
+.home_can_in_x:hover img{
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.home_can_in_x img{
+  height: 270px;
+  width: 470px;
+  border-radius: 15px;
+  border: solid 4px #333;
+}
+
+.home_can_in_x p{
+  width: 470px;
+  font-weight: bold;
+  font-size: 1.5em;
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  line-height: 1.8;
+  margin-top: -40px;
+  border-radius: 0px 0px 15px 15px;
+  background-color: #333;
+  color: deepskyblue;
+}
+
+.popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s;
+}
+.popup.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+.popup-inner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+  max-width: 900px;
+  padding: 50px;
+  background: url(../images/bg__popup.png);
+  z-index: 2;
+}
+.home_can_popup{
+  width: 90%;
+  margin: 20px auto;
+}
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+.close-btn i {
+  font-size: 20px;
+  color: #333;
+}
+.black-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.8);
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+/*---------// demand //---------*/
+
+
+.title__demand{
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #0068b7;
+  margin: 80px 0 50px 0;
+  position: relative;
+}
+.title__demand:before{
+  content: "FUTURE DEMAND";
+  font-size: 0.55em;
+  color: #999;
+  position: absolute;
+  top: -34px;
+}
+.title__demand span{
+  border-bottom: solid 3px #0068b7;
+}
+
+.home_demand_in{
+  line-height: 1.7;
+  font-size: 1.3em;
+}
+
+.home_demand_in p a{
+  color: red;
+}
+
+.home_demand canvas{
+  margin: 50px 0;
+  background-color: white;
+}
+
+
+/*---------// design__to fotter //---------*/
+
+
+.six_box{
+  position: absolute;
+}
+
+.six1{
+  position: relative;
+  top: 0;
+  left: 70px;
+}
+.six2{
+  position: relative;
+  top: -36px;
+  left: 160px;
+}
+.six3{
+  position: relative;
+  top: -20px;
+  left: 160px;
+}
+.six4{
+  position: relative;
+  top: -55px;
+  left: 70px;
+}
+.six5{
+  position: relative;
+  top: -196px;
+  left: -18px;
+}
+
+.hexagon {
+  width: 50px;
+  height: 88px;
+  background: #aaa;
+}
+
+.hexagon_cont {
+  height: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #aaa;
+  z-index: 0;
+}
+
+.hexagon::before {
+  transform: rotate(60deg);
+}
+
+.hexagon::after {
+  transform: rotate(-60deg);
+}
+
+
+.bg__buttom{
+  width:100%;
+  min-width: 1000px;
+  height:30px;
+}
+.is-side{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.11) 16px, rgba(137, 127, 127, 0.11) 19px );
+}
+.is-side1{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.21) 16px, rgba(137, 127, 127, 0.21) 19px );
+}
+.is-side2{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.31) 16px, rgba(137, 127, 127, 0.31) 19px );
+}
+.is-side3{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.41) 16px, rgba(137, 127, 127, 0.41) 19px );
+}
+.is-side4{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.51) 16px, rgba(137, 127, 127, 0.51) 19px );
+}
+.is-side5{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.61) 16px, rgba(137, 127, 127, 0.61) 19px );
+}
+.is-side6{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.71) 16px, rgba(137, 127, 127, 0.71) 19px );
+}
+.is-side7{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.81) 16px, rgba(137, 127, 127, 0.81) 19px );
+}
+.is-side8{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 0.91) 16px, rgba(137, 127, 127, 0.91) 19px );
+}
+.is-side9{
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(0deg, transparent, transparent 16px, rgba(137, 127, 127, 1) 16px, rgba(137, 127, 127, 1) 19px );
+}
+
+
+/*---------// footer //---------*/
+
+
+footer{
+  width: 100%;
+  min-width: 1000px;
+  background-color: #333;
+}
+.footer__box{
+  color: white;
+  margin: 0 auto;
+  width: 1000px;
+  line-height: 1.9;
+}
+
+.footer__textBox{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__textMain__big{
+  font-size: 1.5em;
+}
+
+.footer__textMain{
+  font-size: 1.1em;
+}
+.footer__textSub{
+  font-size: 0.8em;
+}
+
+.footer__textBox p, .footer__textBox .footer__link, .footer__textBox .footer__contents{
+  margin: 50px 45px;
+  width: 400px;
+}
+
+.footer__link a, .footer__contents a{
+  color: lightblue;
+}
+
+.footer__contents a{
+  margin-right: 10px;
+}
+.footer__link div a:hover,.footer__contents a:hover{
+  opacity: 0.7;
+}
+
+
+/*---------// ナビゲーション(右)とメイン(左)位置 //---------*/
+
+
+.right__nav, .right__main{
+  float: right;
+}
+
+.right__nav{
+  width: 23%;
+  margin-top: -30px;
+  margin-left: 10px;
+}
+.right__nav__inner{
+  padding: 0px 5px 0px 5px;
+  background-color: white;
+  border: solid 1px rgba(0, 0, 0, 0.2);
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.right__nav__inner:first-child{
+  margin-top: 0;
+}
+.right__nav__inner li{
+  padding-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+}
+.right__nav__inner li:last-child{
+  padding-bottom: 0;
+  margin-bottom: -10px;
+  border: 0;
+}
+.right__nav__inner__title{
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 0.9em;
+  padding: 5px 0;
+  color: grey;
+}
+
+.left__main{
+  width: 75%;
+}
+
+
+/*---------// news.php //---------*/
+
+
+.title__news{
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #0068b7;
+  margin: 100px 0 50px 0;
+  position: relative;
+}
+.title__news:before{
+  content: "NEWS";
+  font-size: 0.55em;
+  color: #999;
+  position: absolute;
+  top: -34px;
+}
+.title__news span{
+  border-bottom: solid 3px #0068b7;
+}
+
+.news__main{
+  margin: 30px 0 50px 0;
+}
+
+.news__main__inner{
+  background-color: rgba(50, 50, 50, 0.8);
+  padding: 20px;
+  border-bottom: white 2px dotted;
+}
+.news__main__inner:last-child{
+  border-bottom: 0;
+}
+
+.news__img, .news__box{
+  display: inline-block;
+}
+
+.news__img img{
+  width: 150px;
+}
+
+.news__box{
+  vertical-align: top;
+  padding: 20px;
+  font-size: 1.3em;
+}
+
+.news_date{
+  color: #91a6c3;
+  font-style: italic;
+}
+
+.news__text{
+  color: white;
+  font-weight: bold;
+}
+
+.popup-news-inner {
+  font-weight: 300;
+  font-size: 1.2em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 95%;
+  max-width: 950px;
+  padding: 20px;
+  background:black;
+  color: white;
+  z-index: 2;
+}
+.news_popup{
+  width: 95%;
+  margin: 20px auto;
+}
+
+.popup-news-img img{
+  width: 100%;
+}
+
+.news-close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.news-close-btn i{
+  font-size: 20px;
+  color: #fff;
+}
+
+
+/*---------// help.php //---------*/
+
+
+.title__help{
+  text-align: left;
+  font-size: 2.6em;
+  font-weight: bold;
+  color: #0068b7;
+  margin: 100px 0 50px 0;
+  position: relative;
+}
+.title__help:before{
+  content: "HELP";
+  font-size: 0.55em;
+  color: #999;
+  position: absolute;
+  top: -34px;
+}
+.title__help span{
+  border-bottom: solid 3px #0068b7;
+}
+
+.help__main{
+  margin: 30px 0 50px 0;
+}
+
+.help__main__inner{
+  margin: 50px 0;
+}
+
+.help__main__inner h4{
+  padding-bottom: 0.1rem;
+  padding-left: 0.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #a0c0db;
+  border-left: solid 10px #a0c0db;
+}

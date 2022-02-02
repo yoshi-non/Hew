@@ -1,0 +1,270 @@
+/*---------// ログインページデザイン //---------*/
+
+
+.home__login{
+  position: relative;
+  padding: 70px 0 80px 0;
+  width: 100%;
+  min-width: 1000px;
+  background-color: #0066FF;
+}
+
+.home__login svg {
+  position: absolute;
+  top: 13%;
+  left: 10%;
+  /*display: block;*/
+  margin: auto;
+}
+
+.home__login path {
+  stroke: #000;
+  stroke-width: 2px;
+  stroke-dasharray: 853;
+  animation: 8s draw forwards;
+}
+
+@keyframes draw {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 853;
+  }
+  70% {
+    fill-opacity: 0;
+    stroke: #000;
+  }
+  100% {
+    fill-opacity: 0.8;
+    stroke-dashoffset: 0;
+    fill-opacity: 1;
+  }
+}
+
+.login__text{
+  position: relative;
+  z-index: 3;
+  width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login__text h2{
+  color: white;
+  text-align: center;
+  font-size: 2.7em;
+}
+
+.login__text p{
+  color: white;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 1.5;
+  margin: 40px 0;
+}
+
+.login__btn{
+  display: inline-block;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login__btn .container button{
+  font-size: 1.3em;
+  padding: 10px 30px;
+  border: solid 3px black;
+  border-radius: 100vh;
+}
+
+.login__btn .container button:nth-child(1){
+  margin-right: 50px;
+  background-color: white;
+}
+.login__btn .container button:nth-child(2){
+  background-color: black;
+  color: white;
+}
+
+.login__btn .container button:hover {
+  -webkit-transform: translate(0, -2px);
+  transform: translate(0, -2px);
+  transition: 0.8s;
+  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .2);
+}
+
+.login__btn .container button:focus {
+  outline:0;
+}
+
+.login__btn .container button a{
+  margin: -10px -30px;
+  padding: 10px 30px;
+  color: white;
+}
+
+.close:focus{
+  outline: 0;
+}
+
+
+/*---------// ログインモーダルデザイン //---------*/
+
+
+.container {
+  /*padding: 2rem 0rem;*/
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 400px;
+  }
+  .modal-dialog .modal-content {
+    padding: 1rem;
+  }
+}
+
+.modal-header .close {
+  margin-top: -1.5rem;
+}
+
+.form-title {
+  margin: -2rem 0rem 2rem;
+}
+
+.btn-round {
+  border-radius: 3rem;
+}
+
+.delimiter {
+  padding: 1rem;
+}
+
+.social-buttons .btn {
+  margin: 0 0.5rem 1rem;
+}
+
+.signup-section {
+  padding: 0.3rem 0rem;
+}
+
+.required{
+  color: red;
+}
+
+.error{
+  color: red;
+}
+
+#wrap__signUp{
+  width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  border: solid 1px #ddd;
+  border-radius: 10px;
+  background-color: white;
+  /*background: url(../images/bg__popup.png);*/
+}
+
+#wrap__signUp h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.p__left{
+  padding: 5px 10px;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+.p__left:focus{
+  color: #495057;
+  border-color: #80bdff;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+  background-color: #fff;
+  outline: 0;
+}
+.pass__box{
+  position: relative;
+}
+
+.pass__box input{
+  width: 98.5%;
+  position: relative;
+}
+
+.field-icon{
+  position: absolute;
+  top: 6px;
+  right: 18px;
+}
+
+#wrap__signUp label > .input__img {
+  display:none; /* アップロードボタンのスタイルを無効にする */
+}
+#wrap__signUp label {
+  color: white; /* ラベルテキストの色を指定する */
+  background-color: #17a2b8;/* ラベルの背景色を指定する */
+  padding: 10px 20px; /* ラベルとテキスト間の余白を指定する */
+  border-radius: 0.25rem;
+  border: 0;/* ラベルのボーダーを指定する */
+}
+#wrap__signUp label:hover, .signUp__go input:hover, .signUp__go a:hover{
+  /*opacity: 0.8;*/
+  background-color: #138496;
+}
+
+.signUp__back{
+  width: 20%;
+}
+
+.signUp__go{
+  width: 78%;
+  text-align: right;
+}
+
+.signUp__back, .signUp__go{
+  display: inline-block;
+}
+
+.signUp__back a{
+  text-decoration: none;
+  color: #17a2b8;
+}
+
+.signUp__go input, .signUp__go a{
+  color: white;
+  border: 0;
+  border-color: #17a2b8;
+  border-radius: 3rem;
+  padding: 4px 20px;
+  background-color: #17a2b8;
+}
+
+.signUp__go a{
+  font-size: 1.2em;
+  padding: 4px 20px 6px 20px !important;
+}
+
+.icon__img img{
+  border-radius: 100%;
+}
+
+.wrap__fin{
+  text-align: center;
+}
+
+.check_mark_icon{
+  text-align: center;
+}
+
+.check_mark_icon img{
+  width: 100px;
+}
+
+.signUp__fin{
+  font-size: 1.5em;
+}
+
+.signUp__go a{
+  text-decoration: none;
+}

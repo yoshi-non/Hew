@@ -1,0 +1,53 @@
+.profile__userIcon, .profile__userName{
+  background-color: white;
+}
+
+.profile__userIcon h2, .profile__userName h2{
+  background-color: #bbb;
+  line-height: 2;
+  padding: 20px 20px 20px 40px;
+  margin: 0;
+}
+
+.inline{
+  display: inline-block;
+}
+
+.profile__fix__box{
+  padding: 10px 0;
+}
+
+.profile__fix__box:hover{
+  opacity: 0.7;
+}
+
+.icon__box{
+  width: 250px;
+  text-align: center;
+}
+
+.user__name{
+  width: 250px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 20px 0;
+}
+
+.fix__text{
+  width: 740px;
+  position: relative;
+  top: 5px;
+  color: grey;
+  padding-left: 20px;
+  font-size: 2em;
+  font-weight: 300;
+}
+.fix__text span{
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  bottom: 3px;
+  padding-left: 20px;
+  padding-right: 30px;
+}
