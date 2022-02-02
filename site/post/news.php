@@ -152,9 +152,6 @@ if(!empty($_POST)){
             Python 攻略サイト<br>
             Python Strategy Site
           </p>
-          <p class="footer__textMain">
-            当サイトに関するお問い合わせ
-          </p>
           <p class="footer__textSub">
             ・Pythonについての非公式サイトです。<br>
             ・当サイトで使⽤している画像の著作権・肖像権等は各権利者に帰属いたします。<br>
@@ -214,16 +211,11 @@ if(!empty($_POST)){
                         </div>
                         <button type="submit" class="btn btn-info btn-block btn-round">Login</button>
                       </form>
-
-
-
-                      <div class="text-center text-muted delimiter">or use a social network</div>
-                      <div class="d-flex justify-content-center social-buttons"></div>
+                      <div class="modal-footer">
+                        <div class="signup-section">Not a member yet?<br><a href="./join/index.php" class="text-info">Sign Up</a></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="modal-footer d-flex justify-content-center">
-                  <div class="signup-section">Not a member yet? <a href="./join/index.php" class="text-info"> Sign Up</a>.</div>
                 </div>
               </div>
             </div>

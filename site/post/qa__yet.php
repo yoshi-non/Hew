@@ -121,9 +121,6 @@ $questions = $db->query('
             Python 攻略サイト<br>
             Python Strategy Site
           </p>
-          <p class="footer__textMain">
-            当サイトに関するお問い合わせ
-          </p>
           <p class="footer__textSub">
             ・Pythonについての非公式サイトです。<br>
             ・当サイトで使⽤している画像の著作権・肖像権等は各権利者に帰属いたします。<br>
