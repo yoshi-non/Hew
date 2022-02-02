@@ -55,7 +55,7 @@ $questions = $db->query('
         <div class="nav__main">
             <a href="logout.php" style="color: gray; text-decoration: none;">ログアウト</a>
             <a href="news__fin.php" style="color: gray; text-decoration: none;">ニュース</a>
-            <a href="#" style="color: gray; text-decoration: none;">ヘルプ</a>
+            <a href="help__fin.php" style="color: gray; text-decoration: none;">ヘルプ</a>
         </div>
       </div>
     </nav>
