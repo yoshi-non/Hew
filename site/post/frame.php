@@ -60,7 +60,7 @@ if (isset($_SESSION['id']) && $_SESSION['time'] + 3600 > time()) {
           <div class="right__nav__inner">
             <p class="right__nav__inner__title">おすすめ記事</p>
             <ul>
-              <li><a href="frame.php">Pythonのフレームワーク</a></li>
+              <li><a href="library.php">Pythonのライブラリ</a></li>
               <li><a href="kaggle.php">Kaggleとは</a></li>
             </ul>
           </div>
